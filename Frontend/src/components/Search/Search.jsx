@@ -2,14 +2,16 @@ import { useState } from "react";
 import "./Search.scss";
 import { useDispatch } from "react-redux";
 import { addData } from "../../contexts/aqiData";
+import AQIData from "../AQIData/AQIData";
 
 const Search = () => {
   const [searchText, setSearchText] = useState("");
-  const [locationData, setLocationData] = useState([]);
-  const [airQualityData, setAirQualityData] = useState({});
   const dispatch = useDispatch();
 
   const handleClick = async() => {
+
+    dispatch(addData({success: "loading"}));
+
     if(searchText == "") {
         return alert("Field required")
     }
@@ -20,8 +22,6 @@ const Search = () => {
         dispatch(addData({success: false, message: "search result not found" }));
         return;
     }
-    console.log(locationJson1);
-    setLocationData(locationJson1);
 
     const airQualityData1 = await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${locationJson1[0].lat}&lon=${locationJson1[0].lon}&appid=${import.meta.env.VITE_API_KEY}`);
     const airQualityJson1 = await airQualityData1.json();
@@ -34,11 +34,6 @@ const Search = () => {
     dispatch(addData(overallData));
 
     console.log(airQualityJson1);
-  }
-
-  if(airQualityData?.success == false) {
-    console.log("something wrong");
-    setAirQualityData({});
   }
 
 //   if(airQualityData) return <Loader />
@@ -59,6 +54,7 @@ const Search = () => {
           <button onClick={handleClick}>Search</button>
         </div>
       </div>
+      <AQIData />
     </div>
   );
 };
