@@ -33,10 +33,8 @@ const Search = () => {
     }
     dispatch(addData(overallData));
 
-    console.log(airQualityJson1);
   }
 
-//   if(airQualityData) return <Loader />
   return (
     <div className="search">
       <div className="search-input-main">
