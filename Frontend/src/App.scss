@@ -1,0 +1,18 @@
+$font-poppins: "Poppins";
+$primary-black-1: #202020;
+$primary-black-2: #303030;
+$primary-black-3: #404040;
+
+
+body 
+{
+    background-color: $primary-black-2;
+    color:white;
+}
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-poppins;
+}

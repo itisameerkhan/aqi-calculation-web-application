@@ -1,0 +1,64 @@
+$font-poppins: "Poppins";
+$primary-black-1: #202020;
+$primary-black-2: #303030;
+$primary-black-3: #404040;
+$primary-blue-1: #00A9FF;
+
+.header-inner
+{
+    background-color: $primary-black-1;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p
+    {
+        font-family: Staatliches;
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+        color: #00A9FF;
+
+        span 
+        {
+            font-size: 2rem;
+        }
+    }
+}
+.header-temp 
+{
+    height: 85px;
+}
+.header-inner-right
+{
+    ul 
+    {
+        display: flex;
+        gap: 2rem;
+        list-style-type: none;
+
+        li 
+        {
+            font-size: 1.2rem;
+
+            a 
+            {
+                color: white;
+                text-decoration: none;
+
+                &:hover 
+                {
+                    color: #00A9FF;
+                }
+
+            }
+            a.active 
+            {
+                color: #00A9FF;
+            }
+        }
+    }
+}
