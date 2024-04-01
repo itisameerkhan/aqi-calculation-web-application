@@ -4,6 +4,8 @@ import App from "./App";
 import Body from "./components/Body/Body";
 import Search from "./components/Search/Search";
 import Error from "./components/Error/Error";
+import { Provider } from "react-redux";
+import appStore from "./contexts/appSlice";
 
 const router = createBrowserRouter([
   {
@@ -24,5 +26,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <Provider store={appStore}>
+    <RouterProvider router={router} />
+  </Provider>
 );
