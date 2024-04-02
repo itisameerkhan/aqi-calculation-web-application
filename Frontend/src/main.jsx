@@ -15,14 +15,14 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />
+        element: <Body />,
       },
       {
         path: "/search",
-        element: <Search />
-      }
-    ]
-  }
+        element: <Search />,
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
