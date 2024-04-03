@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header">
       <div className="header-inner">
         <p>
-          AQI Calculations{" "}
+          S8 AQI{" "}
           <span className="material-symbols-outlined">mode_fan</span>
         </p>
 
@@ -17,6 +17,9 @@ const Header = () => {
             </li>
             <li>
               <NavLink to={"/search"}>Search</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/calculator"}>Calculator</NavLink>
             </li>
           </ul>
         </div>
