@@ -25,6 +25,10 @@ const aqiModel = mongoose.Schema({
     type: Number,
     required: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
 });
 
 export default mongoose.model("aqi", aqiModel);
