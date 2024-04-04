@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header">
       <div className="header-inner">
         <p>
-          S8 AQI{" "}
+          S8 AQI Project{" "}
           <span className="material-symbols-outlined">mode_fan</span>
         </p>
 
@@ -20,6 +20,9 @@ const Header = () => {
             </li>
             <li>
               <NavLink to={"/calculator"}>Calculator</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/team"}>Meet Our Team</NavLink>
             </li>
           </ul>
         </div>

@@ -25,7 +25,7 @@ const Shimmer = () => {
           <div className="side-top"></div>
         </div>
       </div>
-      <p>Please wait, we are contacting servers...</p>
+      <p>Please wait, we are contacting our servers...</p>
     </div>
   );
 };

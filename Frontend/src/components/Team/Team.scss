@@ -1,0 +1,60 @@
+$font-poppins: "Poppins";
+$primary-black-1: #202020;
+$primary-black-2: #303030;
+$primary-black-3: #404040;
+$primary-blue-1: #00A9FF;
+
+.team {
+  margin: 4rem 8rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  border: 2px solid white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color:black;
+  cursor: pointer;
+
+  &:hover 
+  {
+    border:3px solid $primary-blue-1;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  p {
+    text-align: justify;
+
+    &:nth-child(2)
+    {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem;
+    }
+  }
+
+  div 
+  {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    i {
+        font-size: 1.5rem;
+    }
+  }
+}

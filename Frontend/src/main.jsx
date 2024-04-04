@@ -7,6 +7,7 @@ import Error from "./components/Error/Error";
 import { Provider } from "react-redux";
 import appStore from "./contexts/appSlice";
 import Calculator from "./components/Calculator/Calculator";
+import Team from "./components/Team/Team";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "/calculator",
         element: <Calculator />,
       },
+      {
+        path:"/team",
+        element: <Team />,
+      }
     ],
   },
 ]);
