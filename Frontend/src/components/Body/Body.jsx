@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const Body = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
-    const data = await fetch("http://localhost:8080/api/getaqi");
+    const data = await fetch("https://aqi-backend.onrender.com/api/getaqi");
     const json = await data.json();
     setData(json.data);
   };
