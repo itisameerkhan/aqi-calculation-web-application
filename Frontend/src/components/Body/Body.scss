@@ -11,12 +11,12 @@ tspan {
   .body-inner-1-left {
     border: 1px solid white;
     border-radius: 10px;
-    padding: 2rem 3rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-    p 
-    {
-        font-size: 2rem;
-        padding: 0;
+    padding: 2rem 3rem;
+    p {
+      font-size: 2rem;
+      padding: 0;
     }
   }
 }
@@ -33,23 +33,20 @@ tspan {
       width: 20rem;
       border: 1px solid white;
       border-radius: 10px;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-      p 
-      {
-        &:nth-child(1) 
-        {
-            font-size: 1.2rem;
+      p {
+        &:nth-child(1) {
+          font-size: 1.2rem;
         }
-        &:nth-child(2)
-        {
-            font-size: 1.5rem;
-            font-weight: 500;
+        &:nth-child(2) {
+          font-size: 1.5rem;
+          font-weight: 500;
         }
       }
     }
   }
 }
-.body 
-{
-    margin: 2rem 8rem;
+.body {
+  margin: 2rem 8rem;
 }
