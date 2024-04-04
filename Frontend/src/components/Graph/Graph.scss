@@ -1,0 +1,17 @@
+.graph 
+{
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    tspan 
+    {
+        font-size: 1rem;
+    }
+    line 
+    {
+        color:white;
+        background-color: white;
+    }
+}

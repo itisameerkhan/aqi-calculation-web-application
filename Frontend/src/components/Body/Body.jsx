@@ -1,4 +1,5 @@
 import Display from "../Display/Display";
+import Graph from "../Graph/Graph";
 import Shimmer from "../Shimmer/Shimmer";
 import "./Body.scss";
 import { useEffect, useState } from "react";
@@ -20,6 +21,7 @@ const Body = () => {
   return (
     <div className="body">
       <Display data={data} />
+      <Graph data={data} />
     </div>
   );
 };

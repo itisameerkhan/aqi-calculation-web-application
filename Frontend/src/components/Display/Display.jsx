@@ -6,10 +6,9 @@ const Display = (props) => {
 
   const { aqi, pm2_5, pm10, pmCO, temperature, humidity } = props.data[props.data.length - 1];
 
-  console.log(aqi);
-
   return (
     <div className="display">
+    <h1>Overview</h1>
       <div className="body-inner-1">
         <div className="body-inner-1-left">
           <div>
