@@ -1,3 +1,4 @@
+import "./Body.scss";
 
 const Body = () => {
   return (
