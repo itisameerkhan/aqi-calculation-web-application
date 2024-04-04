@@ -9,9 +9,10 @@ tspan {
   gap: 10rem;
 
   .body-inner-1-left {
-    border: 1px solid white;
+    // border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: #282828;
 
     padding: 2rem 3rem;
     p {
@@ -31,7 +32,8 @@ tspan {
     div {
       padding: 1rem 2rem;
       width: 20rem;
-      border: 1px solid white;
+      // border: 1px solid white;
+      background-color: #272727;
       border-radius: 10px;
       box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
