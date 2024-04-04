@@ -39,9 +39,9 @@ const Team = () => {
           <img src={img3} alt="" />
           <p>Kalaiselvan R</p>
           <p>
-            Spearheaded the development of real-time data acquisition and
-            transmission protocols, leveraging MQTT or HTTP to facilitate
-            communication between the ESP32 device and the cloud server.
+            Orchestrated the implementation of the cloud-based data processing
+            and visualization system and dashboard creation to effectively
+            display air quality metrics and insights.
           </p>
           <div>
             <i className="fa-brands fa-github"></i>

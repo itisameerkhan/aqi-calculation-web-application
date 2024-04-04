@@ -1,0 +1,28 @@
+$primary-blue-1: #00A9FF;
+
+.table {
+  height: 80vh;
+  margin-top: 5rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px 8px;
+  font-size: 1.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #282828;
+}
+
+th {
+  background-color: $primary-blue-1;
+  color: white;
+  text-align: center;
+}
