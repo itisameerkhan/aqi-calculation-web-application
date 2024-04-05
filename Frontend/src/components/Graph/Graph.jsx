@@ -2,7 +2,7 @@ import "./Graph.scss";
 import { LineChart } from "@mui/x-charts/LineChart";
 
 const Graph = (props) => {
-    console.log(props.data);
+  const datas = props.data.slice(-10);
   return (
     <div className="graph">
       <h1>Graph</h1>
@@ -11,7 +11,7 @@ const Graph = (props) => {
         yAxis={[{ data: [100, 200, 300, 400, 500, 600, 700, 800, 900] }]}
         series={[
           {
-            data: props.data.map(data => data.aqi),
+            data: datas.map(datas => datas.aqi),
             // area: true,
           },
         ]}

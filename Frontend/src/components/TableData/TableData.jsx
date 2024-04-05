@@ -1,11 +1,11 @@
 import "./TableData.scss";
 
 const TableData = (props) => {
-  console.log(props.data);
   return (
     <div className="table">
-        <h1>Table</h1>
-        <table>
+      <h1>Table</h1>
+      <table>
+        <thead>
           <tr>
             <th>PM 2.5</th>
             <th>PM 10</th>
@@ -13,8 +13,10 @@ const TableData = (props) => {
             <th>Temperature</th>
             <th>Humidity</th>
           </tr>
-          {props.data.map((data) => (
-            <tr>
+        </thead>
+        <tbody>
+          {props.data.map((data, index) => (
+            <tr key={index}>
               <td>{data.pm2_5}</td>
               <td>{data.pm10}</td>
               <td>{data.pmCO}</td>
@@ -22,9 +24,10 @@ const TableData = (props) => {
               <td>{data.humidity}</td>
             </tr>
           ))}
-        </table>
+        </tbody>
+      </table>
     </div>
-  )
-}
+  );
+};
 
 export default TableData;
