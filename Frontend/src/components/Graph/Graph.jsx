@@ -2,7 +2,7 @@ import "./Graph.scss";
 import { LineChart } from "@mui/x-charts/LineChart";
 
 const Graph = (props) => {
-  const datas = props.data.slice(-10);
+  const datas = props.data.slice(-9);
   return (
     <div className="graph">
       <h1>Graph</h1>
